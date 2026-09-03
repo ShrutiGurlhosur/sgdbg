@@ -1,0 +1,19 @@
+{{ define "main" }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  <p class="section-intro">{{ with .Content }}{{ . }}{{ else }}Automation scripts and small tools for triage, extraction, and analysis workflows.{{ end }}</p>
+</header>
+<ul class="rule-list">
+  {{ range .Pages.ByDate.Reverse }}
+  <li class="rule-item">
+    <div class="post-meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      {{ if .Params.language }}<span class="category">{{ .Params.language }}</span>{{ end }}
+    </div>
+    <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <p class="post-excerpt">{{ .Params.summary | default (.Summary | plainify | truncate 160) }}</p>
+    {{ partial "tags.html" . }}
+  </li>
+  {{ end }}
+</ul>
+{{ end }}

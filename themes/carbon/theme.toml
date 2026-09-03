@@ -1,0 +1,10 @@
+name = "Carbon"
+license = "MIT"
+description = "A minimal, professional theme for security research, malware analysis, and technical writing."
+homepage = "https://example.com"
+tags = ["blog", "minimal", "security", "dark"]
+features = ["dark mode", "syntax highlighting", "tags", "rss"]
+min_version = "0.100.0"
+
+[author]
+  name = "Custom"

@@ -1,0 +1,24 @@
+{{ define "main" }}
+<section class="hero">
+  <p class="hero-eyebrow">// {{ .Site.Params.handle }}</p>
+  <h1>{{ .Site.Title }}</h1>
+  <p class="hero-tagline">{{ .Site.Params.tagline }}</p>
+</section>
+
+{{ $posts := where .Site.RegularPages "Type" "posts" }}
+{{ $posts = $posts.ByDate.Reverse }}
+{{ $paginator := .Paginate $posts }}
+
+<section class="post-list-section">
+  <h2 class="section-heading">Latest writeups</h2>
+  {{ partial "post-list.html" $paginator.Pages }}
+</section>
+
+{{ if gt $paginator.TotalPages 1 }}
+<nav class="pagination">
+  {{ if $paginator.HasPrev }}<a href="{{ $paginator.Prev.URL }}">← Newer</a>{{ end }}
+  <span class="page-count">Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}</span>
+  {{ if $paginator.HasNext }}<a href="{{ $paginator.Next.URL }}">Older →</a>{{ end }}
+</nav>
+{{ end }}
+{{ end }}

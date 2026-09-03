@@ -1,0 +1,16 @@
+{{ define "main" }}
+<article class="single-page rule-page">
+  <header class="page-header">
+    {{ if .Params.language }}<span class="category">{{ .Params.language }}</span>{{ end }}
+    <h1>{{ .Title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+      {{ if .Params.repo }}<a class="repo-link" href="{{ .Params.repo }}" target="_blank" rel="noopener">Source →</a>{{ end }}
+    </div>
+    {{ partial "tags.html" . }}
+  </header>
+  <div class="prose">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

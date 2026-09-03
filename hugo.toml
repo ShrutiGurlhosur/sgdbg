@@ -1,0 +1,56 @@
+baseURL = "https://example.github.io/malware-blog/"
+languageCode = "en-us"
+title = "SGdbg"
+theme = "carbon"
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  author = "Your Name"
+  handle = "@SGdbg"
+  tagline = "Malware analysis, reverse engineering notes, YARA rules & automation scripts."
+  github = "https://github.com/SGdbg"
+  twitter = "https://x.com/SGdbg"
+  email = "you@example.com"
+  accent = "#3fb950"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[markup]
+  [markup.highlight]
+    style = "github-dark"
+    lineNos = true
+    codeFences = true
+    guessSyntax = true
+    tabWidth = 4
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Archive"
+    url = "/archive/"
+    weight = 2
+  [[menu.main]]
+    name = "YARA Rules"
+    url = "/yara-rules/"
+    weight = 3
+  [[menu.main]]
+    name = "Scripts"
+    url = "/scripts/"
+    weight = 4
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 5
+
+[outputs]
+  home = ["HTML", "RSS"]

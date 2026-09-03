@@ -1,0 +1,44 @@
+{{ define "main" }}
+<article class="post single-post">
+  <header class="page-header post-header">
+    {{ if .Params.category }}<span class="category cat-{{ .Params.category | urlize }}">{{ .Params.category }}</span>{{ end }}
+    <h1>{{ .Title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+      {{ if .Params.author }}<span class="byline">by {{ .Params.author }}</span>{{ end }}
+      <span class="reading-time">{{ .ReadingTime }} min read</span>
+    </div>
+    {{ partial "tags.html" . }}
+  </header>
+
+  {{ if .Params.tldr }}
+  <div class="tldr">
+    <strong>TL;DR</strong>
+    <p>{{ .Params.tldr }}</p>
+  </div>
+  {{ end }}
+
+  <div class="prose">
+    {{ .Content }}
+  </div>
+
+  {{ if .Params.iocs }}
+  <section class="iocs">
+    <h2>Indicators of Compromise</h2>
+    <table>
+      <thead><tr><th>Type</th><th>Value</th><th>Note</th></tr></thead>
+      <tbody>
+        {{ range .Params.iocs }}
+        <tr><td>{{ .type }}</td><td><code>{{ .value }}</code></td><td>{{ .note }}</td></tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </section>
+  {{ end }}
+</article>
+
+<nav class="post-nav">
+  {{ with .PrevInSection }}<a class="prev" href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ end }}
+  {{ with .NextInSection }}<a class="next" href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}
+</nav>
+{{ end }}
