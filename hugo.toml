@@ -8,12 +8,12 @@ enableRobotsTXT = true
   pagerSize = 10
 
 [params]
-  author = "Your Name"
+  author = "Shruti Gurlhosur"
   handle = "@SGdbg"
-  tagline = "Malware analysis, reverse engineering notes, YARA rules & automation scripts."
-  github = "https://github.com/SGdbg"
-  twitter = "https://x.com/SGdbg"
-  email = "you@example.com"
+  tagline = "Experimenting with Malware analysis, reverse engineering notes, YARA rules by getting hands dirty"
+  github = "https://github.com/ShrutiGurlhosur"
+  twitter = "https://x.com/shrutigurlhosur"
+  email = "shruti.girlhosur@gmail.com"
   accent = "#3fb950"
 
 [taxonomies]
