@@ -97,7 +97,7 @@ h1, h2, h3, h4 {
 .brand {
   font-family: var(--font-mono);
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 1.6rem;
   color: var(--fg);
 }
 .brand:hover { text-decoration: none; color: var(--accent); }
