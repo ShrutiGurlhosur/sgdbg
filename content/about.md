@@ -23,6 +23,6 @@ Everything here is published for defensive and educational purposes. IOCs and
 detection content are intended for threat intelligence and detection engineering
 use, not for offense.
 
-**Contact:** you can reach me at [you@example.com](mailto:you@example.com),
-on [GitHub](https://github.com/yourhandle), or on
-[X](https://x.com/yourhandle).
+**Contact:** you can reach me at [shruti.gurlhosur@gmail.com](mailto:shruti.gurlhosur@gmail.com),
+on [GitHub](https://github.com/ShrutiGurlhosur), or on
+[X](https://x.com/shrutigurlhosur).
