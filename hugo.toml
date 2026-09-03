@@ -13,7 +13,7 @@ enableRobotsTXT = true
   tagline = "Experimenting with Malware analysis, reverse engineering notes, YARA rules by getting hands dirty"
   github = "https://github.com/ShrutiGurlhosur"
   twitter = "https://x.com/shrutigurlhosur"
-  email = "shruti.girlhosur@gmail.com"
+  email = "shruti.gurlhosur@gmail.com"
   accent = "#3fb950"
 
 [taxonomies]
