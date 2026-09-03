@@ -5,12 +5,9 @@
       Content licensed for research &amp; educational use.
       All IOCs are for defensive threat-intelligence purposes only.
     </p>
-    <p class="footer-links">
-      {{ if .Site.Params.github }}<a href="{{ .Site.Params.github }}" target="_blank" rel="noopener">GitHub</a>{{ end }}
-      {{ if .Site.Params.twitter }}<a href="{{ .Site.Params.twitter }}" target="_blank" rel="noopener">X / Twitter</a>{{ end }}
-      <a href="{{ "index.xml" | absURL }}">RSS</a>
-      {{ if .Site.Params.email }}<a href="mailto:{{ .Site.Params.email }}">Email</a>{{ end }}
-    </p>
+    <div class="footer-links">
+      {{ partial "social-icons.html" . }}
+    </div>
   </div>
 </footer>
 <script src="{{ "js/main.js" | absURL }}"></script>
