@@ -13,12 +13,12 @@ The name is set, but a couple of details still need to be yours in `hugo.toml`:
 ```toml
 title  = "SGdbg"                            # your blog name/handle
 [params]
-  author  = "Your Name"                     # <- update this
+  author  = "Shruti Gurlhosur"                     # <- update this
   handle  = "@SGdbg"                        # shown under the homepage title
   tagline = "..."                           # one-line description
-  github  = "https://github.com/yourhandle"
-  twitter = "https://x.com/yourhandle"
-  email   = "you@example.com"
+  github  = "https://github.com/ShrutiGurlhosur"
+  twitter = "https://x.com/shrutigurlhosur"
+  email   = "shruti.gurlhosur@gmail.com"
 ```
 
 Also edit `content/about.md` with your own bio/contact info, and replace
