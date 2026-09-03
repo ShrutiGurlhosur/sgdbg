@@ -9,7 +9,7 @@ enableRobotsTXT = true
 
 [params]
   author = "Shruti Gurlhosur"
-  //handle = "@SGdbg"
+  #handle = "@SGdbg"
   tagline = "Experimenting with Malware analysis & reverse engineering by getting hands dirty"
   linkedin = "https://www.linkedin.com/in/shruti-gurlhosur/"
   github = "https://github.com/ShrutiGurlhosur"
